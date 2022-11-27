@@ -1,2 +1,3 @@
 # MiniProject
-Simple miniproject
+
+Simple Miniproject
