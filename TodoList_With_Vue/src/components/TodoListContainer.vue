@@ -1,3 +1,4 @@
+<!-- 앱을 총괄하는 컨테이너 생성 -->
 <template>
   <todo-list-new />
   <section class="container">

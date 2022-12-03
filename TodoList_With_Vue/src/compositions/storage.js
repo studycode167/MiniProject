@@ -20,3 +20,12 @@ export const useStorage = () => {
     saveTodos,
   }
 }
+
+/*
+usestorage 함수
+KEY : localstorage에서 데이터를 저장할 KEY
+storage_obj : 일정리스트를 가질 todo속성과 신규id를 책정할 수 있는 storage_id 속성을 가진 객체
+loadTodos : localStorage로 부터 데이터를 불러오는 함수
+saveTodo : loclaStorage로 데이터를 저장하는 함수
+
+*/

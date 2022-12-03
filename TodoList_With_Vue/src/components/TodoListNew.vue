@@ -1,3 +1,4 @@
+<!-- 신규 할 일을 추가하는 TodoListNew -->
 <template>
   <section class="mb-5">
     <div class="container">
@@ -40,7 +41,7 @@ export default {
 <script setup>
 import { reactive, toRefs, inject } from "vue"
 
-const today = inject("today")
+const today = inject("today")   //오늘 날짜 입력
 const addTodo = inject("addTodo")
 const val_obj = reactive({
   job: "",

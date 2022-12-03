@@ -1,3 +1,4 @@
+<!-- 필터링된 데이터를 다루는 TodoListmain -->
 <template>
   <todo-list-menu v-on:change-filter="onChangeFilter" class="p-0" />
   <div v-for="key in Object.keys(filtered_todos)" :key="key" class="mb-3">
@@ -33,6 +34,7 @@ const {
   getAllTodayTodos,
   getAllTodos,
 } = useFilter()
+
 const filter = ref(0)
 const filtered_todos = ref([])
 const pending_todos = ref([])
@@ -64,8 +66,9 @@ const filters = {
 
 provide("filters", filters)
 
+//배열을 특정한 키워드로 분리
 const groupBy = (todos) => {
-  return todos.reduce((acc, cur) => {
+  return todos.reduce((acc, cur) => {     //reduce 메서드 사용
     acc[cur["date"]] = acc[cur["date"]] || []
     acc[cur["date"]].push(cur)
     return acc

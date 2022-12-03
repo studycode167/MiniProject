@@ -1,3 +1,7 @@
+<!-- 데이터를 직접적으로 보여주는 TodoList 컴포넌트 
+     TodoList 컴포넌트는 Props로 들어온 데이터를 리스트 형식으로 렌더링하는 역할로
+     각 데이터에 대해 삭제, 완료 등 상태를 변경하는 메뉴를 제공 -->
+
 <template>
   <main>
     <div v-for="(todo, idx) in data" :key="todo.id">
