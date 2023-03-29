@@ -1,0 +1,9 @@
+Backend 설치 리스트
+fastapi
+unicorn[standard]
+sqlalchemy
+alembic
+
+Frontend 설치 리스트
+Svelte
+
